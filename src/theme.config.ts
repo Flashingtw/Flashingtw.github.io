@@ -106,7 +106,24 @@ export default defineConfig({
   "sidebar": {
     "author": "Flashingtw",
     "description": "喜歡研究演算法 熱愛程式的人",
-    "social": {},
+    "social": {
+      "github": {
+        "url": "https://github.com/Flashingtw",
+        "icon": "i-ri-github-fill",
+      },
+      "email": {
+        "url": "mailto:0624joshua@gmail.com",
+        "icon": "i-ri-mail-line",
+      },
+      "Instagram": {
+        "url": "https://www.instagram.com/dacsc_flash.zcx/",
+        "icon": "i-ri-instagram-line",
+      },
+      "Threads": {
+        "url": "https://www.threads.com/@flash.zcx",
+        "icon": "i-ri-threads-line",
+      },
+    },
     "menu": []
   },
   "footer": {
