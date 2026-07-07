@@ -325,6 +325,10 @@ const postMeta = {
   wordCount,
   readTime,
 };
+
+// 🎯 修正處：將自訂變數移進程式碼區塊的最底部，並刪除重複的切換線
+const finalPageCover = post.data.image || post.data.cover;
+const computedDescription = post.data.description || post.body?.slice(0, 150).replace(/\s+/g, " ") || "";
 ---
 
 <Layout
@@ -334,14 +338,11 @@ const postMeta = {
   navigation={navigation}
   pageTitle={post.data.title}
   postMeta={postMeta}
-  pageCover={post.data.cover}
->
+  pageCover={finalPageCover} 
+  description={computedDescription}>
   <Fragment slot="head">
-    <meta
-      name="description"
-      content={post.data.description ||
-        post.body?.slice(0, 150).replace(/\s+/g, " ")}
-    />
+    <meta name="description" content={computedDescription} />
+    
     {/* 加密文章添加 noindex */}
     {isEncrypted && <meta name="robots" content="noindex, nofollow" />}
   </Fragment>

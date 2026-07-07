@@ -49,6 +49,7 @@ interface Props {
   postMeta?: PostMeta;
   indexPage?: boolean;
   pageCover?: ImageMetadata | string;
+  description?: string; // 👈 順利接收來自文章頁面的簡介
 }
 
 const {
@@ -60,6 +61,7 @@ const {
   postMeta,
   indexPage = false,
   pageCover,
+  description = "", // 👈 預設為空字串
 } = Astro.props;
 
 const navLinks = themeConfig.nav;
@@ -97,7 +99,42 @@ const headerCovers = advancedCarousel
       fallbackCovers: covers,
     })
   : [];
-const resolvedHeaderCover = pageCover ?? fixedCover;
+
+// 1. 保留原本給頂部橫幅使用的邏輯（不要動它）
+const resolvedHeaderCover = typeof pageCover === "string" 
+  ? resolveFixedCover(pageCover) 
+  : (pageCover ?? fixedCover);
+
+// 2. 🎯 終極 Open Graph 圖片路徑抓取邏輯
+// ==================== ✨ 請將 Layout.astro 的這段邏輯替換 ✨ ====================
+let ogImageSrc = "";
+
+if (indexPage) {
+  ogImageSrc = "/images/home.png";
+} else if (typeof pageCover === "string" && pageCover.trim() !== "") {
+  ogImageSrc = pageCover;
+} else if (pageCover && typeof pageCover === "object" && "src" in pageCover) {
+  // 🎯 如果是 Astro 自動解析的圖片物件，直接取用它編譯後的完整路徑（會自帶 /_astro/ 網址）
+  ogImageSrc = pageCover.src;
+} else if (resolvedHeaderCover && typeof resolvedHeaderCover === "object" && "src" in resolvedHeaderCover) {
+  ogImageSrc = resolvedHeaderCover.src;
+} else if (typeof resolvedHeaderCover === "string" && resolvedHeaderCover.trim() !== "") {
+  ogImageSrc = resolvedHeaderCover;
+} else {
+  ogImageSrc = "/images/default.avif";
+}
+
+// 🎯 修正相對路徑防呆：如果既不是完整網址 (http)，開頭也沒有斜線 (/)，就幫它補上斜線
+if (!ogImageSrc.startsWith("http") && !ogImageSrc.startsWith("/")) {
+  ogImageSrc = "/" + ogImageSrc;
+}
+
+// 產生最終給社群媒體抓取的絕對網址
+const absoluteOgImage = new URL(
+  ogImageSrc,
+  Astro.site ?? Astro.url.origin
+).toString();
+// =========================================================================
 
 // Get all posts for widgets
 const allPosts = await getCollection("posts");
@@ -170,6 +207,17 @@ import SearchPage from "@/components/search/SearchPage.svelte";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.png" />
     <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:title" content={pageTitle || siteName} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content={absoluteOgImage} />
+    <meta property="og:site_name" content={siteName} />
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={pageTitle || siteName} />
+    {description && <meta property="twitter:description" content={description} />}
+    <meta property="twitter:image" content={absoluteOgImage} />
 
     <Analytics />
 
@@ -279,7 +327,7 @@ import SearchPage from "@/components/search/SearchPage.svelte";
         leaveTitle:
           visibilityTitleConfigData.leaveTitle ?? "(╥﹏╥) 不要走嘛...",
         returnTitle:
-          visibilityTitleConfigData.returnTitle ?? "(๑•̀ㅂ•́)و✧ 欢迎回来！",
+          visibilityTitleConfigData.returnTitle ?? "(๑•̀ㅂ•́)ו✧ 欢迎回来！",
         restoreDelay: visibilityTitleConfigData.restoreDelay ?? 3000,
       };
 
