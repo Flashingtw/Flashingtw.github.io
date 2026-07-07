@@ -52,6 +52,7 @@
     "node-emoji": "^2.2.0",
     "nyx-player": "^0.1.1",
     "pagefind": "^1.5.2",
+    "prisma": "^7.8.0",
     "satteri": "^0.9.4",
     "svelte": "^5.56.4",
     "typescript": "^6.0.3",

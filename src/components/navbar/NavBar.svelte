@@ -84,16 +84,7 @@
     <LeftNavBtn clickCallback={clickToggleCallback} />
     <MenuBar {name} {navLinks} />
     <RightNavBar>
-      <li>
-        <a
-          href="/random/"
-          class="nav-action text-5"
-          aria-label={randomPostLabel}
-          title={randomPostLabel}
-        >
-          <div class="i-ri-dice-line"></div>
-        </a>
-      </li>
+
       <li>
         <button
           type="button"

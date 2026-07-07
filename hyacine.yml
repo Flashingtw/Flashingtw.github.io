@@ -1,28 +1,59 @@
+# 文章存放目录
 contentDir: src/posts
+
+# 静态资源目录
 assetsDir: src/assets
+
+# 数据库文件目录
 databaseDir: .hyacine
-defaultCategories:
+
+# 默认分类（创建文章时自动应用）
+defaultCategories: []
+
+# 支持的文章文件扩展名
 postExtension:
   - .md
-  - .mdx
+
+# 资源路径解析模式
 assetResolution: standard
 
+# 主题配置入口文件路径
 themeConfigPath: src/theme.config.ts
+
+# 主题配置类型定义文件路径
 themeConfigDefPath: src/toolkit/themeConfig.ts
+
+# 主题配置类型名称
 themeConfigDefType: ShokaXThemeConfig
+
+# 主题配置模板文件路径
 themeConfigTemplatePath: src/theme.config.template.txt
 
+# 字体配置
 fonts:
   - path: src/assets/fonts/LXGWWenKai-Regular.ttf
-    type: standard
+    type: standard           # standard, monospace, serif, sans-serif, display
   - path: src/assets/fonts/MapleMono-CN-Regular.ttf
     type: monospace
 
+# 内置图片配置
 images:
   - path: src/assets/avatar.avif
   - path: src/assets/images/cover-1.avif
   - path: src/assets/images/cover-2.avif
-  - path: src/assets/images/cover-3.avif
-  - path: src/assets/images/cover-4.avif
-  - path: src/assets/images/cover-5.avif
-  - path: src/assets/images/cover-6.avif
+
+# AI 嵌入向量配置
+embedding:
+  enabled: false              # 是否启用
+  model: onnx-community/Qwen3-Embedding-0.6B-ONNX  # Hugging Face 模型 ID
+  maxChunkChars: 512          # 分块最大字符数
+
+# AI 摘要配置
+summary:
+  enabled: false              # 是否启用
+  apiBaseUrl: https://openrouter.ai/api/v1  # OpenAI 兼容 API 地址
+  apiKey: ""                  # API 密钥
+  model: openai/gpt-4o-mini   # 模型名称
+  maxInputChars: 8000         # 最大输入字符数
+  maxOutputTokens: 256        # 最大输出 token 数
+  temperature: 0.2            # 生成温度

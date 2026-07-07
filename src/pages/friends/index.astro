@@ -37,25 +37,13 @@ const friendsJson = JSON.stringify(friendsSnippet, null, 2);
       <p>{pageDescription}</p>
     </div>
     <section class="friend-section friend-rules">
-      <h3>友链规则</h3>
-      <div class="friend-rules-content">
-        <FriendRules />
-      </div>
+      
     </section>
     <section class="friend-section friend-snippet">
-      <h3>友链配置示例</h3>
-      <p>添加本站时，请将下面内容追加到自己的 links 配置中。</p>
-      <code-block>
-        <Code
-          code={friendsJson}
-          lang="json"
-          themes={codeThemes}
-          class="friend-code"
-        />
-      </code-block>
+  
     </section>
     <section class="friend-section friend-links-section">
-      <h3>友链列表</h3>
+      <h3>友鏈列表</h3>
       <FriendLinks links={friendLinks} />
     </section>
     {

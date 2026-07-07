@@ -52,7 +52,7 @@ export const DEFAULT_THEME_CONFIG: ShokaXThemeConfig = {
       },
     },
     {
-      text: "友链",
+      text: "友鏈",
       href: "/friends/",
       icon: "i-ri-link",
     },

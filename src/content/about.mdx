@@ -1,127 +1,126 @@
 ---
-title: 关于
-description: 这里记录我是谁、这个博客在做什么，以及如何和我交流。
-date: 2026-03-29
-updated: 2026-03-29
+title: 關於我
+date: 2026-07-07
+updated: 2026-07-07
+comments: true
 ---
 
-import AboutDialog from "@/components/AboutDialog.svelte";
-import themeConfig from "@/theme.config";
-import { avatar } from "@/components/Images.astro";
+{/* 在 MDX 中，你可以使用大括號包住註解，這些內容在編譯後不會顯示在網頁上 */}
 
-export const aboutAuthorName = themeConfig.sidebar?.author || "作者";
-export const aboutAuthorAvatar = avatar.src;
+## Hello World!
 
-export const aboutDialogNodes = [
-  {
-    id: "intro",
-    text: "你好，欢迎来到关于页面。想先了解哪一部分？",
-    options: [
-      {
-        label: "你是谁？",
-        reply: "先介绍一下你自己吧。",
-        nextId: "identity",
-      },
-      {
-        label: "这个博客在写什么？",
-        reply: "这个站点主要会分享什么内容？",
-        nextId: "blog",
-      },
-      {
-        label: "技术栈是什么？",
-        reply: "这个站点是怎么搭建的？",
-        nextId: "stack",
-      },
-      {
-        label: "怎么联系你？",
-        reply: "如果我想联系你，应该怎么做？",
-        nextId: "contact",
-      },
-    ],
-  },
-  {
-    id: "identity",
-    text: "我是一名喜欢写作和折腾前端体验的开发者。这里主要记录实践、思考与长期维护过程中的经验。",
-    options: [
-      {
-        label: "继续：你平时最关注什么？",
-        reply: "你平时最关注哪些方向？",
-        nextId: "focus",
-      },
-      {
-        label: "返回话题菜单",
-        reply: "换个话题。",
-        nextId: "intro",
-      },
-    ],
-  },
-  {
-    id: "focus",
-    text: "我更关注：可维护的内容结构、可读性高的代码、以及长期可演进的主题与组件设计。",
-    options: [
-      {
-        label: "返回话题菜单",
-        reply: "明白了，回到主菜单。",
-        nextId: "intro",
-      },
-    ],
-  },
-  {
-    id: "blog",
-    text: "内容会覆盖 Astro、Svelte、工程化实践、主题设计，以及一些开发过程中的踩坑和复盘。",
-    options: [
-      {
-        label: "返回话题菜单",
-        reply: "了解了，看看其他问题。",
-        nextId: "intro",
-      },
-    ],
-  },
-  {
-    id: "stack",
-    text: "当前站点使用 Astro + Svelte，运行时以 Bun 为主；并且会保持文章页面、搜索与组件交互体验的一致性。",
-    options: [
-      {
-        label: "返回话题菜单",
-        reply: "技术栈很清晰，回到主菜单。",
-        nextId: "intro",
-      },
-    ],
-  },
-  {
-    id: "contact",
-    text: "你可以通过评论区或社交链接联系我。通常我会优先回复和文章主题相关的问题与建议。",
-    options: [
-      {
-        label: "返回话题菜单",
-        reply: "收到，我再看看其他内容。",
-        nextId: "intro",
-      },
-    ],
-  },
-];
+我是來自 **大安高工電子科** 的學生，目前擔任 **大安電研社** 的社長。
+對程式邏輯有著濃厚的興趣，熱衷於演算法與競技程式設計 (Competitive Programming)。
+這裡記錄了我的學習軌跡、競賽經歷以及在程式之路上的點點滴滴。
 
-你好，欢迎来到这里。
+---
 
-这个页面会长期维护，主要包含三部分：
+## 核心技能與專長
 
-1. 我是谁，以及我在持续关注什么。
-2. 这个博客会写什么、怎么写、为什么这样写。
-3. 如果你想交流，可以通过哪些方式联系我。
+* **程式語言**：`C++` (自 2025 年 8 月起)
+* **專注領域**：**演算法**、**資料結構**、**競賽解題**
+* **社團經歷**：帶領大安電研社，推廣資訊科學與技術交流
 
-为了减少“一次性介绍信息”带来的阅读负担，下面放了一个可交互的对话组件。你可以点击不同选项查看对应回复。
+---
 
-<AboutDialog
-  client:load
-  title="快速对话"
-  intro="选择一个回复选项继续对话。你可以在 about.mdx 里预先定义分支与回复。"
-  authorName={aboutAuthorName}
-  authorAvatar={aboutAuthorAvatar}
-  nodes={aboutDialogNodes}
-/>
+## 🚀 經歷與時間軸
 
-你可以直接编辑 `src/content/about.mdx` 里的 `aboutDialogNodes` 来预先定义：
+<div class="relative border-l-2 border-gray-400 ml-3 mt-6 mb-10">
+  
+  {/* ===== 2026 年節點 ===== */}
+  <div class="mb-8 pl-6 relative group/item">
+    
+    {/* 💡 修正 1 (光圈)：改用 var(--body-bg)，讓光圈永遠跟隨系統背景色，完美融入並切斷直線 */}
+    <span class="absolute w-3 h-3 rounded-full -left-[7.5px] top-2 ring-4 !ring-[var(--body-bg)] transition-colors duration-300 bg-gray-400 group-hover/item:bg-blue-500"></span>
+    
+    {/* 💡 修正 2 (年份)：改用 var(--text-color)，不再寫死黑白，直接讓主題自動幫你反轉顏色 */}
+    <h3 class="text-xl font-bold mt-0 mb-4 transition-colors duration-300 !text-gray-500 group-hover/item:!text-[var(--text-color)]">2026 年</h3>
+    
+    <div class="flex flex-col gap-5">
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">06月 ｜ 青年百億圓夢計畫</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">當選 I-J-30 計畫參與者。</p>
+      </div>
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">04月 ｜ 114校內程式設計競賽</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">取得 <strong>冠軍 🏆</strong>，證明自身解題思維與程式編寫流暢度。</p>
+      </div>
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">03月 ｜ TOI 臺灣國際資訊奧林匹亞初選</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">獲得 <strong>100 分</strong> 的成績，持續累積大型競賽實戰經驗。</p>
+      </div>
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">01月 ｜ APCS 大學程式設計先修檢測</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">觀念題 <strong>4 級分</strong> / 實作題 <strong>3 級分</strong> (總分 300 分)<br/>突破自我，展現了階段性的學習成果。</p>
+      </div>
+    </div>
+  </div>
 
-- 对话内容（每个节点的文本）
-- 可选回复（每个按钮）
-- 对应回复（按钮跳转到哪个节点）
+  {/* ===== 2025 年節點 ===== */}
+  <div class="mb-4 pl-6 relative group/item">
+    
+    {/* 💡 同步修正 2025 的光圈 */}
+    <span class="absolute w-3 h-3 rounded-full -left-[7.5px] top-2 ring-4 !ring-[var(--body-bg)] transition-colors duration-300 bg-gray-400 group-hover/item:bg-blue-500"></span>
+    
+    {/* 💡 同步修正 2025 的年份文字 */}
+    <h3 class="text-xl font-bold mt-0 mb-4 transition-colors duration-300 !text-gray-500 group-hover/item:!text-[var(--text-color)]">2025 年</h3>
+    
+    <div class="flex flex-col gap-5">
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">10月 ｜ APCS 大學程式設計先修檢測</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">觀念題 <strong>3 級分</strong> / 實作題 <strong>1 級分</strong> (0 分)<br/>一次寶貴的實戰檢驗，發現盲點並成為下次進步的養分。</p>
+      </div>
+      <div>
+        <div class="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">08月 ｜ 正式啟程</div>
+        <p class="text-sm text-gray-500 mt-1 mb-0">開始學習 C++ 程式語言，正式踏入程式設計的世界。</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+---
+
+## 📬 聯絡與社群
+
+歡迎透過以下方式與我交流技術或討論合作：
+
+<div class="mt-4 flex flex-col gap-3">
+  <a href="mailto:0624joshua@gmail.com" target="_blank" class="flex items-center gap-2 no-underline hover:text-blue-500 transition-colors">
+    <i class="i-ri-mail-line text-xl"></i>
+    <span><strong>Email</strong>: 0624joshua@gmail.com</span>
+  </a>
+  
+  <a href="https://github.com/Flashingtw/" target="_blank" class="flex items-center gap-2 no-underline hover:text-gray-500 transition-colors">
+    <i class="i-ri-github-fill text-xl"></i>
+    <span><strong>GitHub</strong>: github.com/Flashingtw/</span>
+  </a>
+  
+  {/* 使用 button 標籤來做點擊區域，並加入 group 類別來控制 hover 效果 */}
+  <button id="discord-copy-btn" class="flex items-center gap-2 bg-transparent border-none p-0 cursor-pointer text-inherit text-base group">
+    <i class="i-ri-discord-fill text-xl text-indigo-500"></i>
+    <span class="group-hover:text-indigo-500 transition-colors"><strong>Discord</strong>: flash.zcx</span>
+    <i class="i-ri-file-copy-line text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity ml-1" title="點擊複製"></i>
+    <span id="copy-toast" class="text-sm text-green-500 opacity-0 transition-opacity ml-2">已複製！</span>
+  </button>
+</div>
+
+{/* 這段腳本在 Astro 編譯時會被打包，並在客戶端瀏覽器上執行 */}
+{/* 使用 set:html 並用反引號把整段 JS 包起來，避開 MDX 的大括號解析地雷 */}
+<script set:html={`
+  const copyBtn = document.getElementById('discord-copy-btn');
+  const toast = document.getElementById('copy-toast');
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('flash.zcx');
+        toast.style.opacity = '1';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+        }, 2000);
+      } catch (err) {
+        console.error('複製失敗:', err);
+      }
+    });
+  }
+`} />
