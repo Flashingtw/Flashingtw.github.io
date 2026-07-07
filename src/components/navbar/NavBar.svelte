@@ -112,24 +112,26 @@
 
 <style>
   #nav {
-    transition: transform 0.4s ease;
+    /* 1. 加入完整的漸變動畫：包含位移、背景色、陰影、文字顏色 */
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+    /* 2. 強制關閉漸層背景（這是閃爍的元凶），統一使用純色運算 */
+    background-image: none !important; 
+    background-color: transparent;
   }
 
   .nav-bg {
-    background-image: var(--nav-bg);
+    /* 滾動後的狀態：改成你剛剛設定好的「實心底色」 */
+    background-color: var(--grey-0);
     box-shadow: 0.1rem 0.1rem 0.2rem var(--grey-9-a1);
     text-shadow: 0 0 0.0625rem var(--grey-9-a1);
     color: var(--text-color);
   }
 
   .nav-top {
+    /* 在最頂部的狀態：維持純透明，透出後面的封面圖片 */
+    background-color: transparent;
     color: var(--header-text-color);
-    background-image: linear-gradient(
-      180deg,
-      color-mix(in oklch, var(--grey-9) 45%, transparent) 0%,
-      var(--grey-9-a2) 45%,
-      var(--grey-1-a0) 100%
-    );
+    /* 保留文字陰影，確保在透明背景下，白色文字依然清晰可見 */
     text-shadow: 0 0.125rem 0.25rem var(--grey-9-a5);
   }
 
