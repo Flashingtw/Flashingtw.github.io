@@ -37,8 +37,8 @@ const parseDate = (value: string | Date | undefined, fallback: Date) => {
 };
 
 const fallbackDate = new Date();
-const title = frontmatter.title || "关于";
-const description = frontmatter.description || "关于页面";
+const title = frontmatter.title || "關於我";
+const description = frontmatter.description || "一個從不會演算法到熱愛演算法的人";
 const publishDate = parseDate(frontmatter.date, fallbackDate);
 const updatedDate = frontmatter.updated
   ? parseDate(frontmatter.updated, publishDate)
