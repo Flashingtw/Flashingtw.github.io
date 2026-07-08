@@ -4,6 +4,7 @@ date: 2026-02-01
 categories: [教學]
 tags: [C++,競程,APCS]
 image: ../../assets/postsImages/APCS-mid.jpg
+cover: ../../assets/postsImages/APCS-mid.jpg
 ---
 
 # APCS 中級 基本教學 - by Flashingtw

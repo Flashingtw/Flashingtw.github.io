@@ -1,244 +1,244 @@
 {
   "nav": {
-    "home": "首页",
+    "home": "首頁",
     "posts": "文章",
-    "categories": "分类",
-    "tags": "标签",
-    "archives": "归档",
-    "statistics": "统计"
+    "categories": "分類",
+    "tags": "標籤",
+    "archives": "歸檔",
+    "statistics": "統計"
   },
   "post": {
-    "wordCount": "字数统计",
-    "readingTime": "阅读时长",
-    "minutes": "分钟",
+    "wordCount": "字數統計",
+    "readingTime": "閱讀時長",
+    "minutes": "分鐘",
     "words": "字",
     "author": "文章作者",
-    "link": "文章链接",
-    "copyright": "版权声明",
-    "sticky": "置顶文章",
+    "link": "文章連結",
+    "copyright": "版權聲明",
+    "sticky": "置頂文章",
     "latest": "最新文章",
-    "noContent": "暂无文章",
-    "publishedAt": "发布于",
-    "createdAt": "创建于",
-    "updatedAt": "更新于",
+    "noContent": "暫無文章",
+    "publishedAt": "發佈於",
+    "createdAt": "建立於",
+    "updatedAt": "更新於",
     "previousPost": "上一篇",
     "nextPost": "下一篇",
-    "rewardSupport": "赞赏支持",
-    "rewardDescription": "您的支持是我继续创作的动力",
+    "rewardSupport": "贊賞支持",
+    "rewardDescription": "您的支持是我持續創作的動力",
     "readingNeed": "需要",
     "license": {
-      "text": "本文采用",
-      "suffix": "许可协议，转载请注明出处",
-      "noreprint": "本文禁止任何形式的转载",
-      "CC-BY-4.0": "署名 4.0 国际 (CC BY 4.0)",
-      "CC-BY-SA-4.0": "署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)",
-      "CC-BY-ND-4.0": "署名-禁止演绎 4.0 国际 (CC BY-ND 4.0)",
-      "CC-BY-NC-4.0": "署名-非商业性使用 4.0 国际 (CC BY-NC 4.0)",
-      "CC-BY-NC-SA-4.0": "署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)",
-      "CC-BY-NC-ND-4.0": "署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)"
+      "text": "本文採用",
+      "suffix": "授權協議，轉載請註明出處",
+      "noreprint": "本文禁止任何形式的轉載",
+      "CC-BY-4.0": "姓名標示 4.0 國際 (CC BY 4.0)",
+      "CC-BY-SA-4.0": "姓名標示-相同方式分享 4.0 國際 (CC BY-SA 4.0)",
+      "CC-BY-ND-4.0": "姓名標示-禁止改作 4.0 國際 (CC BY-ND 4.0)",
+      "CC-BY-NC-4.0": "姓名標示-非商業性 4.0 國際 (CC BY-NC 4.0)",
+      "CC-BY-NC-SA-4.0": "姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0)",
+      "CC-BY-NC-ND-4.0": "姓名標示-非商業性-禁止改作 4.0 國際 (CC BY-NC-ND 4.0)"
     },
-    "encryptedExcerpt": "这是一篇加密文章，无法显示摘要"
+    "encryptedExcerpt": "這是一篇加密文章，無法顯示摘要"
   },
   "category": {
-    "title": "分类",
+    "title": "分類",
     "all": "全部",
-    "subcategories": "个子分类",
+    "subcategories": "個子分類",
     "posts": "篇文章",
-    "label": "分类",
-    "noContent": "该分类下暂无文章",
-    "untitled": "无标题"
+    "label": "分類",
+    "noContent": "此分類下暫無文章",
+    "untitled": "無標題"
   },
   "tag": {
-    "title": "标签"
+    "title": "標籤"
   },
   "archive": {
-    "title": "归档",
+    "title": "歸檔",
     "all": "全部",
     "year": "年",
     "month": "月",
     "excellent": "太棒了",
     "great": "非常好",
     "good": "很好",
-    "nice": "不错",
-    "ok": "还行",
+    "nice": "不錯",
+    "ok": "還行",
     "emh": "嗯..",
-    "keepTrying": "继续努力"
+    "keepTrying": "繼續努力"
   },
   "statistics": {
-    "title": "文章统计",
-    "totalPosts": "文章总数",
-    "totalCategories": "分类总数",
-    "totalTags": "标签总数",
-    "topCategory": "最常用分类",
-    "postCount": "文章数",
-    "monthlyPosts": "每月发布趋势",
-    "categoryDistribution": "分类文章分布（Top 10）",
-    "tagDistribution": "Tag 文章分布（Top 16）",
-    "latestMonthSummary": "最近统计月份 {{month}} 共发布 {{count}} 篇文章。"
+    "title": "文章統計",
+    "totalPosts": "文章總數",
+    "totalCategories": "分類總數",
+    "totalTags": "標籤總數",
+    "topCategory": "最常用分類",
+    "postCount": "文章數",
+    "monthlyPosts": "每月發佈趨勢",
+    "categoryDistribution": "分類文章分佈（Top 10）",
+    "tagDistribution": "標籤文章分佈（Top 16）",
+    "latestMonthSummary": "最近統計月份 {{month}} 共發佈 {{count}} 篇文章。"
   },
   "sidebar": {
-    "toc": "目录",
-    "overview": "站点概览",
+    "toc": "目錄",
+    "overview": "站點概覽",
     "author": "作者",
-    "scrollTop": "回到顶部",
-    "scrollBottom": "去到底部",
-    "relatedPosts": "相关文章",
+    "scrollTop": "回到頂部",
+    "scrollBottom": "前往底部",
+    "relatedPosts": "相關文章",
     "state": {
       "posts": "文章",
-      "categories": "分类",
-      "tags": "标签"
+      "categories": "分類",
+      "tags": "標籤"
     },
     "related": {
-      "noContent": "暂无相关文章"
+      "noContent": "暫無相關文章"
     },
     "calendar": {
-      "title": "日历",
-      "subtitle": "三栏布局预览",
-      "placeholder": "更多侧栏内容正在路上"
+      "title": "日曆",
+      "subtitle": "三欄佈局預覽",
+      "placeholder": "更多側欄內容正在路上"
     },
     "search": {
-      "title": "全站搜索",
-      "subtitle": "快速定位内容",
-      "action": "打开搜索面板",
-      "helper": "复用现有 Pagefind 搜索，查文章、标签和关键词更省心。"
+      "title": "全站搜尋",
+      "subtitle": "快速定位內容",
+      "action": "打開搜尋面板",
+      "helper": "沿用現有 Pagefind 搜尋，查文章、標籤與關鍵字更省心。"
     },
     "moments": {
-      "title": "最近动态",
-      "subtitle": "说说更新"
+      "title": "最近動態",
+      "subtitle": "說說更新"
     },
     "randomPosts": {
-      "title": "随机文章",
-      "subtitle": "换个口味"
+      "title": "隨機文章",
+      "subtitle": "換個口味"
     },
     "tagCloud": {
-      "title": "标签云",
-      "subtitle": "热门主题",
-      "browseAll": "查看全部标签 →"
+      "title": "標籤雲",
+      "subtitle": "熱門主題",
+      "browseAll": "查看全部標籤 →"
     },
     "announcement": {
       "title": "公告",
-      "subtitle": "站点小黑板"
+      "subtitle": "站點小黑板"
     },
     "extra": {
-      "title": "右栏",
-      "subtitle": "附加内容区",
-      "empty": "当前未启用任何右栏内容"
+      "title": "右欄",
+      "subtitle": "附加內容區",
+      "empty": "目前未啟用任何右欄內容"
     },
     "panels": {
-      "contents": "目录",
-      "related": "相关",
-      "overview": "站点"
+      "contents": "目錄",
+      "related": "相關",
+      "overview": "站點"
     }
   },
   "footer": {
     "poweredBy": "由",
     "and": "和",
-    "poweredSuffix": "主题强力驱动",
-    "totalWordsTitle": "总字数",
-    "estimatedReadingTimeTitle": "预计阅读时间",
-    "randomPosts": "随机文章",
-    "recentComments": "最新评论",
-    "noRecentComments": "暂无评论，来抢个沙发吧～",
-    "recentCommentsLoadFailed": "最新评论加载失败，请稍后重试",
-    "commentAnonymous": "匿名用户",
-    "walineNotConfigured": "Waline 服务地址未配置"
+    "poweredSuffix": "主題強力驅動",
+    "totalWordsTitle": "總字數",
+    "estimatedReadingTimeTitle": "預估閱讀時間",
+    "randomPosts": "隨機文章",
+    "recentComments": "最新留言",
+    "noRecentComments": "暫無留言，快來搶沙發吧～",
+    "recentCommentsLoadFailed": "最新留言載入失敗，請稍後再試",
+    "commentAnonymous": "匿名使用者",
+    "walineNotConfigured": "Waline 服務位址尚未配置"
   },
   "pagination": {
-    "prev": "上一页",
-    "next": "下一页"
+    "prev": "上一頁",
+    "next": "下一頁"
   },
   "button": {
-    "readMore": "阅读更多",
+    "readMore": "閱讀更多",
     "more": "更多"
   },
   "tags": {
-    "title": "标签",
-    "allTags": "所有标签",
-    "tagged": "标签"
+    "title": "標籤",
+    "allTags": "所有標籤",
+    "tagged": "標籤"
   },
   "common": {
-    "loading": "加载中",
+    "loading": "載入中",
     "more": "更多",
     "total": "共",
-    "home": "首页",
+    "home": "首頁",
     "in": "在"
   },
   "search": {
-    "devModeSkipped": "当前为开发模式，已跳过 Pagefind 加载。",
-    "buildHint": "请先执行构建（含索引生成）后再预览站内搜索效果。"
+    "devModeSkipped": "目前為開發模式，已跳過 Pagefind 載入。",
+    "buildHint": "請先執行建置（含索引生成）後，再預覽站內搜尋效果。"
   },
   "encrypted": {
     "title": "文章已加密",
-    "description": "这篇文章需要密码才能查看",
-    "passwordPlaceholder": "请输入密码",
+    "description": "這篇文章需要密碼才能查看",
+    "passwordPlaceholder": "請輸入密碼",
     "submit": "解密",
-    "decrypting": "正在解密内容...",
-    "error": "密码错误，请重试",
-    "passwordRequired": "请输入密码"
+    "decrypting": "正在解密內容...",
+    "error": "密碼錯誤，請重試",
+    "passwordRequired": "請輸入密碼"
   },
   "moments": {
-    "title": "动态",
-    "noContent": "暂无动态",
-    "publishedAt": "发布于",
-    "imageAlt": "动态图片 {{index}}"
+    "title": "動態",
+    "noContent": "暫無動態",
+    "publishedAt": "發佈於",
+    "imageAlt": "動態圖片 {{index}}"
   },
   "imageZoom": {
-    "dialog": "图片预览",
-    "close": "关闭图片预览",
-    "previous": "查看上一张图片",
-    "next": "查看下一张图片"
+    "dialog": "圖片預覽",
+    "close": "關閉圖片預覽",
+    "previous": "查看上一張圖片",
+    "next": "查看下一張圖片"
   },
   "random": {
-    "title": "随机文章",
-    "redirecting": "正在跳转到随机文章...",
-    "noPost": "暂无可跳转的文章",
-    "retry": "重新随机",
-    "noScript": "当前浏览器未启用 JavaScript，请先返回首页手动挑选文章。"
+    "title": "隨機文章",
+    "redirecting": "正在跳轉到隨機文章...",
+    "noPost": "暫無可跳轉的文章",
+    "retry": "重新隨機",
+    "noScript": "目前瀏覽器未啟用 JavaScript，請先返回首頁手動挑選文章。"
   },
   "aboutDialog": {
     "defaults": {
-      "title": "快速对话",
-      "intro": "选择一个回复选项继续对话。你可以在组件里预先定义分支与回复。",
+      "title": "快速對話",
+      "intro": "選擇一個回覆選項繼續對話。你可以在元件中預先定義分支與回覆。",
       "authorName": "作者",
       "authorInitial": "作",
-      "endHint": "这段对话已经结束。你可以点击“重新开始”再聊一次。"
+      "endHint": "這段對話已經結束。你可以點擊「重新開始」再聊一次。"
     },
     "defaultNodes": {
       "intro": {
-        "text": "你好，这里是可配置对话组件示例。请选择一个回复继续。",
+        "text": "你好，這裡是可配置對話元件示例。請選擇一個回覆繼續。",
         "optionA": {
-          "label": "示例问题 A",
-          "reply": "我想看示例问题 A 的回复。"
+          "label": "示例問題 A",
+          "reply": "我想看示例問題 A 的回覆。"
         },
         "optionB": {
-          "label": "示例问题 B",
-          "reply": "我想看示例问题 B 的回复。"
+          "label": "示例問題 B",
+          "reply": "我想看示例問題 B 的回覆。"
         }
       },
       "answerA": {
-        "text": "这是示例回答 A。你可以把节点文本和选项替换成自己的内容。"
+        "text": "這是示例回答 A。你可以把節點文字與選項替換成自己的內容。"
       },
       "answerB": {
-        "text": "这是示例回答 B。你也可以通过 nodes 属性在页面里覆盖默认对话。"
+        "text": "這是示例回答 B。你也可以透過 nodes 屬性在頁面中覆蓋預設對話。"
       },
       "backToMenu": {
-        "label": "返回菜单",
-        "reply": "回到菜单。"
+        "label": "返回選單",
+        "reply": "回到選單。"
       }
     },
     "runtime": {
-      "noNodesConfigured": "还没有配置对话节点。",
-      "branchNotConfigured": "这个分支还没配置完成，请先选择其它选项。",
-      "noDialogContent": "暂无对话内容，请先配置节点。"
+      "noNodesConfigured": "尚未配置任何對話節點。",
+      "branchNotConfigured": "這個分支尚未配置完成，請先選擇其他選項。",
+      "noDialogContent": "暫無對話內容，請先配置節點。"
     },
     "typing": {
-      "ariaLabel": "正在输入",
-      "peerTyping": "对方正在输入…",
-      "inputPlaceholder": "在这里输入消息（演示输入框）"
+      "ariaLabel": "正在輸入",
+      "peerTyping": "對方正在輸入…",
+      "inputPlaceholder": "在這裡輸入訊息（示範輸入框）"
     },
     "actions": {
-      "send": "发送",
-      "restart": "重新开始"
+      "send": "發送",
+      "restart": "重新開始"
     }
   }
 }

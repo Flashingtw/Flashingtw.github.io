@@ -57,6 +57,8 @@ import Font from "vite-plugin-font";
 import PlayformInline from "@playform/inline";
 import { installProcessWarningFilter } from "./src/toolkit/suppressWatcherWarning";
 import themeConfig from "./src/theme.config.ts";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 if (themeConfig.diagnostics?.suppressFsWatcherMaxListenersWarning !== false) {
   installProcessWarningFilter();
@@ -86,7 +88,12 @@ export default defineConfig({
     }),
     sitemap(),
     hyacinePlugin(),
-    mdx(),
+    // 修改這裡：
+    mdx({
+      extendMarkdownConfig: true,
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
     PlayformInline({
       Logger: 0,
     }),
