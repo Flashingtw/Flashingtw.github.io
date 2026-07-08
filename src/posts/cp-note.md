@@ -232,6 +232,3 @@ Y+ digitsum(尾) = total
 再計算總共的sum是不是跟total一樣
 如果sum=total 再檢查字數有沒有一樣
 都一樣的話就可以輸出答案了
-
-## CR 1093 - pD
-

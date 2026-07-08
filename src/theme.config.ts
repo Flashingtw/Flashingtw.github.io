@@ -141,8 +141,8 @@ export default defineConfig({
     }
   },
   "tagCloud": {
-    "startColor": "var(--grey-6)",
-    "endColor": "var(--color-blue)"
+    "startColor": "#faa332",
+    "endColor": "#F8C8DC"
   },
   "widgets": {
     "randomPosts": true,
@@ -227,9 +227,18 @@ export default defineConfig({
   },
   "friends": {
     "title": "朋友們!",
-    "description": "朋友們都是大佬阿QAQ",
+    "description": "是大佬，這裡全部都是大佬!",
     "comments": false,
     "links": [
+      {
+        "author": "大安電資",
+        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524443072509771909/dacsssc.png?ex=6a4fc3bf&is=6a4e723f&hm=aeb2de50eba4a280e5d0baeecca0aa21e008015b3af6c1a67b7605d18c017ba6&",
+        "desc": "DACSSSC | 大安高工電資社群",
+        "color": "#ffe203",
+        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524443072509771909/dacsssc.png?ex=6a4fc3bf&is=6a4e723f&hm=aeb2de50eba4a280e5d0baeecca0aa21e008015b3af6c1a67b7605d18c017ba6&",
+        "title": "大安電資Discord Server",
+        "url": "https://discord.gg/7k6GeHGH3"
+      },
       {
         "author": "Robin Chiang",
         "avatar": "https://robin-tw.xyz/avatar.jpg",
@@ -241,14 +250,24 @@ export default defineConfig({
       {
         "author": "Yimang",
         "avatar": "https://yimang.tw/images/avatar.webp",
+        "color": "#fd9b4b",
         "desc": "分享科技教學、程式開發、加密貨幣與生活隨筆的個人部落格。內容涵蓋隱私網路、應用程式分享，遊記等主題，記錄學習筆記、實作經驗與技術探索。",
         "siteImage": "https://yimang.tw/images/default-cover.webp",
         "title": "Yimang's blog",
-        "color": "#fd9b4b",
         "url": "https://yimang.tw/"
+      },
+      {
+        "author": "Sean Hawks",
+        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524439686834163854/image.png?ex=6a4fc098&is=6a4e6f18&hm=2ca97dc02129b2dd074fdb204cbafc6744fe2a270a969d206dc620bb252cf18e&",
+        "desc": "Coding helps me survive; music makes me feel alive.",
+        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524440186434490540/image.png?ex=6a4fc10f&is=6a4e6f8f&hm=e9233669a256fa7822471014930aac142471285278b8213a5d7c3fe4b3d5e3c5&",
+        "title": "hawks.tw",
+        "url": "hawks.tw",
+        "color": "#97a4de"
       }
     ]
   },
+  
   "copyright": {
     "license": "CC-BY-NC-SA-4.0",
     "show": false

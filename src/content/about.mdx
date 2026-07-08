@@ -102,17 +102,19 @@ export const timelineData = [
       <h3 className="text-xl font-bold mt-0 mb-4 transition-colors duration-300 text-gray-600 group-hover/year:text-[var(--text-color)]">
         {group.year} 年
       </h3>
-      
+      {/*項目文字*/}
       <div className="flex flex-col gap-5">
         {group.events.map((item, idx) => (
-          /* 第二層：項目區塊 (Group B) */
           <div key={idx} className="group/item">
-            <div className="font-bold transition-colors duration-300 text-gray-500 group-hover/item:text-blue-500">
+
+            <div className="font-bold transition-colors duration-300 text-[var(--text-color-subtle)] group-hover/item:text-[var(--color-blue)]">
               {item.date} ｜ {item.title}
             </div>
-            <p className="text-sm text-gray-700 mt-1 mb-0 transition-colors duration-300 group-hover/item:text-gray-400">
+
+            <p className="text-sm text-[var(--text-color-muted)] mt-1 mb-0 transition-colors duration-300 group-hover/item:text-[var(--text-color)]">
               {item.desc}
             </p>
+
           </div>
         ))}
       </div>
@@ -125,24 +127,38 @@ export const timelineData = [
 
 歡迎透過以下方式與我交流技術或討論合作：
 
-<div class="mt-4 flex flex-col gap-3">
-  <a href="mailto:0624joshua@gmail.com" target="_blank" class="flex items-center gap-2 no-underline hover:text-blue-500 transition-colors">
-    <i class="i-ri-mail-line text-xl"></i>
-    <span><strong>Email</strong>: 0624joshua@gmail.com</span>
+<div class="mt-4 flex flex-col gap-2">
+  
+  <a href="mailto:0624joshua@gmail.com" target="_blank" class="group flex items-center gap-3 p-2 -ml-2 rounded-lg no-underline text-[var(--text-color)] hover:bg-[var(--line-hover-bg)] transition-all duration-150">
+    <div class="flex items-center justify-center w-8 h-8 rounded-md bg-[var(--color-red-a1)] group-hover:bg-[var(--color-red-a3)] transition-colors">
+      <i class="i-ri-mail-line text-xl text-[var(--color-red)]"></i>
+    </div>
+    
+    <span class="font-medium group-hover:text-[var(--color-red)] transition-colors">
+      {"0624joshua@gmail.com"}
+    </span>
+    
   </a>
   
-  <a href="https://github.com/Flashingtw/" target="_blank" class="flex items-center gap-2 no-underline hover:text-gray-500 transition-colors">
-    <i class="i-ri-github-fill text-xl"></i>
-    <span><strong>GitHub</strong>: github.com/Flashingtw/</span>
+  <a href="https://github.com/Flashingtw/" target="_blank" class="group flex items-center gap-3 p-2 -ml-2 rounded-lg no-underline text-[var(--text-color)] hover:bg-[var(--line-hover-bg)] transition-all duration-150">
+    <div class="flex items-center justify-center w-8 h-8 rounded-md bg-[var(--grey-9-a1)] group-hover:bg-[var(--grey-9-a2)] transition-colors">
+      <i class="i-ri-github-fill text-xl text-[var(--text-color)]"></i>
+    </div>
+    <span class="font-medium group-hover:text-[var(--text-color-muted)] transition-colors">github.com/Flashingtw/</span>
   </a>
   
-  {/* 使用 button 標籤來做點擊區域，並加入 group 類別來控制 hover 效果 */}
-  <button id="discord-copy-btn" class="flex items-center gap-2 bg-transparent border-none p-0 cursor-pointer text-inherit text-base group">
-    <i class="i-ri-discord-fill text-xl text-indigo-500"></i>
-    <span class="group-hover:text-indigo-500 transition-colors"><strong>Discord</strong>: flash.zcx</span>
-    <i class="i-ri-file-copy-line text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity ml-1" title="點擊複製"></i>
-    <span id="copy-toast" class="text-sm text-green-500 opacity-0 transition-opacity ml-2">已複製！</span>
+  <button id="discord-copy-btn" class="group flex items-center gap-3 p-2 -ml-2 w-full rounded-lg bg-transparent border-none cursor-pointer text-left text-[var(--text-color)] hover:bg-[var(--line-hover-bg)] transition-all duration-150">
+    <div class="flex items-center justify-center w-8 h-8 rounded-md bg-[var(--cb-focus-bg)] group-hover:bg-[var(--cb-focus-bg)] transition-colors">
+      <i class="i-ri-discord-fill text-xl text-[var(--color-blue)]"></i>
+    </div>
+    <span class="font-medium group-hover:text-[var(--color-blue)] transition-colors">flash.zcx</span>
+    
+    <div class="ml-auto flex items-center gap-2">
+      <i class="i-ri-file-copy-line text-[var(--text-color-subtle)] opacity-0 group-hover:opacity-100 transition-opacity" title="點擊複製"></i>
+      <span id="copy-toast" class="text-sm text-[var(--color-green)] opacity-0 transition-opacity">已複製！</span>
+    </div>
   </button>
+  
 </div>
 
 {/* 這段腳本在 Astro 編譯時會被打包，並在客戶端瀏覽器上執行 */}
