@@ -25,6 +25,7 @@ export default defineConfig({
   plugins: [
     SiteUpTime({
       siteCreatedAt: "2026-07-06T00:00:00Z",
+      prefixText: "已存在"
     }),
     MouseFirework({
       colors: [
