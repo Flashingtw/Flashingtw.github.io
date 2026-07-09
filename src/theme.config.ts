@@ -264,6 +264,15 @@ export default defineConfig({
         "title": "hawks.tw",
         "url": "hawks.tw",
         "color": "#97a4de"
+      },
+      {
+        "author": "匿名用戶9487",
+        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524711893732819044/image.png?ex=6a50be1b&is=6a4f6c9b&hm=ecb9559df7e8ae64afe83a8e93ad84e2b6a6c26820065c3eec80e1cdbb9cfddd&",
+        "desc": "井底的笨貓",
+        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524711926108520539/image.png?ex=6a50be22&is=6a4f6ca2&hm=a4afd0f5246137cf63abc7e6bdb0ebbea1c235e8ea22f2329df5b367c20384f7&",
+        "title": "匿名的貓貓",
+        "url": "https://qwo877.github.io/me/",
+        "color": "#d3aa8d"
       }
     ]
   },
