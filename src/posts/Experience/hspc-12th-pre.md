@@ -385,6 +385,6 @@ int main(){
 pC過了之後我就沒做啥事跑去睡覺了w 剩下兩題都超難感覺是防破台用的
 嚇哭了
 總之關版前Rk是3
-![alt text](https://cdn.discordapp.com/attachments/1524439663044071574/1524467615920160930/image.png?ex=6a4fda9a&is=6a4e891a&hm=0c24d00ff2d331b0a296d936becf624859be0efbaad836676d17fa8443459dab&)
+![alt text](https://flashing.tw/assets/postimage/hspc13.png)
 
 真的很感謝電神們帶我飛
