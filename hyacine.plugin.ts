@@ -33,8 +33,8 @@ export default defineConfig({
         "rgba(187,222,214,.9)",
         "rgba(138,198,209,.9)",
       ],
-      count: 30,
-      radius: 16,
+      count: 10,
+      radius: 8,
     }),
   ],
 });
