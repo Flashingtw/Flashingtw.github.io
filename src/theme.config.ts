@@ -1,4 +1,5 @@
 import { defineConfig } from "./toolkit/themeConfig";
+import friendsList from "./assets/friends.json";
 
 export default defineConfig({
   "siteName": "Flashingtw's Blog",
@@ -229,61 +230,7 @@ export default defineConfig({
     "title": "朋友們!",
     "description": "是大佬，這裡全部都是大佬!",
     "comments": false,
-    "links": [
-      {
-        "author": "大安電資",
-        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524443072509771909/dacsssc.png?ex=6a4fc3bf&is=6a4e723f&hm=aeb2de50eba4a280e5d0baeecca0aa21e008015b3af6c1a67b7605d18c017ba6&",
-        "desc": "DACSSSC | 大安高工電資社群",
-        "color": "#ffe203",
-        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524443072509771909/dacsssc.png?ex=6a4fc3bf&is=6a4e723f&hm=aeb2de50eba4a280e5d0baeecca0aa21e008015b3af6c1a67b7605d18c017ba6&",
-        "title": "大安電資Discord Server",
-        "url": "https://discord.gg/7k6GeHGH3"
-      },
-      {
-        "author": "Robin Chiang",
-        "avatar": "https://robin-tw.xyz/avatar.jpg",
-        "desc": "望見那無垠的天空, 尋回那一天的答案",
-        "siteImage": "https://robin-tw.xyz/assets/desktop-banner/6.webp",
-        "title": "Robin's Blog",
-        "url": "https://robin-tw.xyz/"
-      },
-      {
-        "author": "Yimang",
-        "avatar": "https://yimang.tw/images/avatar.webp",
-        "color": "#fd9b4b",
-        "desc": "分享科技教學、程式開發、加密貨幣與生活隨筆的個人部落格。內容涵蓋隱私網路、應用程式分享，遊記等主題，記錄學習筆記、實作經驗與技術探索。",
-        "siteImage": "https://yimang.tw/images/default-cover.webp",
-        "title": "Yimang's blog",
-        "url": "https://yimang.tw/"
-      },
-      {
-        "author": "Sean Hawks",
-        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524439686834163854/image.png?ex=6a4fc098&is=6a4e6f18&hm=2ca97dc02129b2dd074fdb204cbafc6744fe2a270a969d206dc620bb252cf18e&",
-        "desc": "Coding helps me survive; music makes me feel alive.",
-        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524440186434490540/image.png?ex=6a4fc10f&is=6a4e6f8f&hm=e9233669a256fa7822471014930aac142471285278b8213a5d7c3fe4b3d5e3c5&",
-        "title": "hawks.tw",
-        "url": "hawks.tw",
-        "color": "#97a4de"
-      },
-      {
-        "author": "匿名用戶9487",
-        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524711893732819044/image.png?ex=6a50be1b&is=6a4f6c9b&hm=ecb9559df7e8ae64afe83a8e93ad84e2b6a6c26820065c3eec80e1cdbb9cfddd&",
-        "desc": "井底的笨貓",
-        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524711926108520539/image.png?ex=6a50be22&is=6a4f6ca2&hm=a4afd0f5246137cf63abc7e6bdb0ebbea1c235e8ea22f2329df5b367c20384f7&",
-        "title": "匿名的貓貓",
-        "url": "https://qwo877.github.io/me/",
-        "color": "#d3aa8d"
-      },
-      {
-        "author": "shrimp2845",
-        "avatar": "https://cdn.discordapp.com/attachments/1524439663044071574/1524733802503606372/image.png?ex=6a50d282&is=6a4f8102&hm=2bbad259ee56789154ff336cf841166671cba9a3f7d505bc0ee23856e448d43f&",
-        "desc": "ohhi?",
-        "siteImage": "https://cdn.discordapp.com/attachments/1524439663044071574/1524733802994204702/image.png?ex=6a50d282&is=6a4f8102&hm=7a0bc04ed82839b566fb69a5ccfddea72ee86b2652279483b9e1df8a565d989b&",
-        "title": "SHRIMP2845 の BLOG",
-        "url": "https://shrimp2845-tw.github.io",
-        "color": "#e6a1ff"
-      }
-    ]
+    "links": friendsList as any,
   },
   
   "copyright": {

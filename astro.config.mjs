@@ -88,9 +88,7 @@ export default defineConfig({
     }),
     sitemap(),
     hyacinePlugin(),
-    // 修改這裡：
     mdx({
-      extendMarkdownConfig: true,
       remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex],
     }),
@@ -139,9 +137,9 @@ export default defineConfig({
       },
       mdastPlugins: [
         satteriAutoImport(mdxAutoImports),
+        satteriKatex(),
         satteriBreaks(),
         satteriIns(),
-        satteriKatex(),
         satteriEmoji(),
         satteriRubyDirective(),
         noteDirective(),

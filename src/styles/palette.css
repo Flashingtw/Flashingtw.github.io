@@ -339,3 +339,9 @@
 .blue { color: var(--color-blue); }
 .purple { color: var(--color-purple); }
 .grey { color: var(--color-grey); }
+
+p:has(> span.katex:only-child) {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}

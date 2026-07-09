@@ -1,0 +1,100 @@
+[
+  {
+    "author": "大安電資",
+    "avatar": "https://flashing.tw/assets/friends/dacssc.png",
+    "desc": "DACSSSC | 大安高工電資社群",
+    "color": "#ffe203",
+    "siteImage": "https://flashing.tw/assets/friends/dacssc.png",
+    "title": "大安電資Discord Server",
+    "url": "https://discord.gg/7k6GeHGH3"
+  },
+  {
+    "author": "Robin Chiang",
+    "avatar": "https://robin-tw.xyz/avatar.jpg",
+    "desc": "望見那無垠的天空, 尋回那一天的答案",
+    "siteImage": "https://robin-tw.xyz/assets/desktop-banner/6.webp",
+    "title": "Robin's Blog",
+    "url": "https://robin-tw.xyz/"
+  },
+  {
+    "author": "Yimang",
+    "avatar": "https://yimang.tw/images/avatar.webp",
+    "color": "#fd9b4b",
+    "desc": "分享科技教學、程式開發、加密貨幣與生活隨筆的個人部落格。內容涵蓋隱私網路、應用程式分享，遊記等主題，記錄學習筆記、實作經驗與技術探索。",
+    "siteImage": "https://yimang.tw/images/default-cover.webp",
+    "title": "Yimang's blog",
+    "url": "https://yimang.tw/"
+  },
+  {
+    "author": "Sean Hawks",
+    "avatar": "https://flashing.tw/assets/friends/hawks_ava.png",
+    "desc": "Coding helps me survive; music makes me feel alive.",
+    "siteImage": "https://flashing.tw/assets/friends/hawks_site.png",
+    "title": "hawks.tw",
+    "url": "hawks.tw",
+    "color": "#97a4de"
+  },
+  {
+    "author": "匿名用戶9487",
+    "avatar": "https://flashing.tw/assets/friends/unkmeow_ava.png",
+    "desc": "井底的笨貓",
+    "siteImage": "https://flashing.tw/assets/friends/unkmeow_site.png",
+    "title": "匿名的貓貓",
+    "url": "https://qwo877.github.io/me/",
+    "color": "#d3aa8d"
+  },
+  {
+    "author": "shrimp2845",
+    "avatar": "https://flashing.tw/assets/friends/shrimp_ava.png",
+    "desc": "ohhi?",
+    "siteImage": "https://flashing.tw/assets/friends/shrimp_site.png",
+    "title": "SHRIMP2845 の BLOG",
+    "url": "https://shrimp2845-tw.github.io",
+    "color": "#e6a1ff"
+  },
+  {
+    "author": "一般路過史萊姆",
+    "avatar": "https://www.justaslime.dev/avatar.png",
+    "desc": "A lazy guy's blog",
+    "siteImage": "",
+    "title": "Brian Duan's Blog",
+    "url": "https://www.justaslime.dev/",
+    "color": "#5f8587"
+  },
+  {
+    "author": "我裂開了",
+    "avatar": "https://avatars.githubusercontent.com/lbc0841",
+    "desc": "別TLE了，我裂開",
+    "title": "我裂開了",
+    "url": "https://lbc0841.github.io/",
+    "siteImage": "",
+    "color": "#faffff"
+  },
+  {
+    "author": "itouSouta15",
+    "avatar": "https://itousouta15.tw/assets/avatar.webp",
+    "desc": "itouSouta / 郭家睿 / 伊藤蒼太的個人網站 ε(*´･∀･｀)зﾞ",
+    "siteImage": "https://itousouta15.tw/assets/banner.webp",
+    "title": "itouSouta15.tw",
+    "url": "https://itousouta15.tw/",
+    "color": "#b0bdf7"
+  },
+  {
+    "author": "Justin",
+    "avatar": "https://justin0711.com/static/img/profile.jpg",
+    "desc": "A developer using Python, currently focusing on distributed systems, AI model deployment, and custom platform architecture design. I enjoy deconstructing problems, building modular system architectures, and constantly challenging efficiency limits. My goal is to build scalable computing platforms and promote the democratization of personal cloud computing. ",
+    "siteImage": "",
+    "title": "Justin's Blog",
+    "url": "https://justin0711.com/",
+    "color": "#0033ff"
+  },
+  {
+    "author": "淳",
+    "avatar": "https://flashing.tw/assets/friends/chuen_ava",
+    "desc": "群除我佬，我是肺霧",
+    "siteImage": "",
+    "title": " 淳の網站",
+    "url": "https://chuen666666.com/",
+    "color": "#6082b5"
+  }
+]
